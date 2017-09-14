@@ -83,8 +83,8 @@ spring:
     name: security-cf-cups-demo
 security:
   user:
-    name: ${vcap.services.my-cfcups-service.credentials.username}
-    password: ${vcap.services.my-cfcups-service.credentials.password}
+    name: ${vcap.services.my-cfcups-service.credentials.username:admin}
+    password: ${vcap.services.my-cfcups-service.credentials.password:password}
 ```
 
 - Invoke the application in a browser using the URL and when prompted the username/password will be as follows which
