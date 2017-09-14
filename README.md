@@ -25,7 +25,7 @@ $ cf cups my-cfcups-service -p  "{\"username\": \"myadminuser\", \"password\": \
 ```
 
 - Push the application to PCF , notice how the manifest.yml is using the name of the CUPS service to bind
-to. The name matcahes the CUPS command above
+to. The name matches the CUPS command above
 
 manifest.yml
 
@@ -96,7 +96,11 @@ username: myadminuser
 password: myadminpassword
 ```
 
-Once successful the application name is returned 
+Once successful the application name is returned as follows
+
+```
+Application Name : security-cf-cups-demo
+```
 
 <hr />
 Pas Apicella [papicella at pivotal.io] is a Senior Platform Architect at Pivotal Australia 
