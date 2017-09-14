@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: security-cf-cups-demo
+security:
+  user:
+    name: ${vcap.services.my-cfcups-service.credentials.username:admin}
+    password: ${vcap.services.my-cfcups-service.credentials.password:password}

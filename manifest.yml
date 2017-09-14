@@ -1,0 +1,11 @@
+---
+applications:
+- name: cf-security-cups
+  memory: 756M
+  instances: 1
+  random-route: true
+  path: ./target/springsecurity-cf-cups-0.0.1-SNAPSHOT.jar
+  services:
+    - my-cfcups-service 
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urando
